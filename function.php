@@ -33,6 +33,7 @@ function line_notify($Token, $message, $sticker_package = "", $stickerId = "")
     if (curl_error($chOne)) {
         echo 'error:' . curl_error($chOne);
     } else {
+        //return ในรูปแบบ json
         $result_ = json_decode($result, true);
         return $result_;
         // echo "{ \"status\" : \"" . $result_['status'] . "\",";
