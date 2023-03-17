@@ -1,3 +1,4 @@
+<?php
 /* https://krupairost.com */
 /*สามารถดูรหัส sticker package และ sticker id ได้จาก */
 /* https://developers.line.biz/en/docs/messaging-api/sticker-list/ */
@@ -45,3 +46,4 @@ function line_notify($Token, $message, $sticker_package = "", $stickerId = "")
     }
     curl_close($chOne);
 }
+?>
