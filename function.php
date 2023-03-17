@@ -13,6 +13,7 @@ function line_notify($Token, $message, $sticker_package = "", $stickerId = "")
             'message' => trim($message), // ต้องส่งข้อความด้วยเสมอ ถ้าไม่มี ให้เว้นเป็นช่องว่าง
         );
     }
+    //กำหนดโซนและรูปแบบข้อความ
     date_default_timezone_set("Asia/Bangkok");
     $chOne = curl_init();
     curl_setopt($chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify");
